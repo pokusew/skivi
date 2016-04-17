@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>${title}</title>
+	<trackList>
+		<track>
+			<location>${title}</location>
+			<!-- <duration>${duration}</duration> -->
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>start-time=75</vlc:option>
+				<vlc:option>stop-time=85</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<location>video.mp4</location>
+			<duration>366828</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+				<vlc:option>start-time=95</vlc:option>
+				<vlc:option>stop-time=105</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<location>video.mp4</location>
+			<duration>366828</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
+				<vlc:option>start-time=125</vlc:option>
+				<vlc:option>stop-time=135</vlc:option>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
+		<vlc:item tid="1"/>
+		<vlc:item tid="2"/>
+	</extension>
+</playlist>

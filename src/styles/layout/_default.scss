@@ -1,0 +1,87 @@
+//
+// Default layout
+// --------------------------------------------------
+
+html, body, #app, #root {
+	height: 100%;
+}
+
+body {
+	//background: #f8f8f8;
+	//background: linear-gradient(top, #d9eaf3 0, #f8f8f8 8%) 0 4px;
+	//background-size: 100% 20px;
+}
+
+#app {
+	//background: transparentize(#000, .5);
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.layout-content {
+		flex: 1 0 auto;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.layout-footer {
+		flex: none;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+		background: #000;
+		background-size: 250px;
+		background-repeat: repeat;
+		background-attachment: fixed;
+		background-image: url('http://skivi.martinendler.cz/static/stars.jpg');
+		color: #FFD041;
+
+		p {
+			text-align: center;
+			margin: 0;
+		}
+	}
+}
+
+.page {
+	flex: 1 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 20px;
+
+	.page-header {
+		flex: none;
+		position: relative;
+		display: block;
+		margin: 0 0 20px 0;
+		padding-top: 70px;
+		padding-bottom: 20px;
+		background: #ce7a7d;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-image: url('http://skivi.martinendler.cz//static/triangles.svg');
+		border: none;
+		color: transparentize(#000, 0.5);
+
+		h1 {
+			font-weight: 500;
+			margin: 10px 0 15px 0;
+			padding: 0;
+		}
+	}
+
+	.page-content {
+		flex: 1 0 auto;
+		position: relative;
+	}
+
+}
